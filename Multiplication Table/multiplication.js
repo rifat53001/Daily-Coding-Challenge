@@ -1,4 +1,4 @@
-var color_td;
+var color;
 document.write("<table border='1px'>");
 
 for(var i = 1; i < 13; i++) {
@@ -8,13 +8,13 @@ for(var i = 1; i < 13; i++) {
 	for(var j = 1; j < 13; j++) {
 
 		if(j == 1 || i == 1) {
-			color_td = "#ccc";
+			color = "#ccc";
 		}
 		else {
-			color_td = "#fff";
+			color = "#fff";
 		}
 
-		document.write("<td style='width:30px;background-color:" + color_td + "'>" + i*j + "</td>");
+		document.write("<td style='width:30px;background-color:" + color + "'>" + i*j + "</td>");
 	}
 	document.write("</tr>");
 }
